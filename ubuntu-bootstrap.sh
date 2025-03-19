@@ -20,7 +20,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ### dependency
 apt install -y \
     git curl \
-    wget vim
+    wget vim jq
 
 
 ### misc dependency installation
@@ -32,6 +32,8 @@ sudo apt install -y golang-go
 sudo apt install -y python3 python3-pip
 # node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+source ~/.bashrc
+nvm install node
 # rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
@@ -40,5 +42,3 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 sudo apt install -y neovim
 # lazydock
 go install github.com/jesseduffield/lazydocker@latest
-
-source ~/.bashrc
