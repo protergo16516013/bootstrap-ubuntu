@@ -1,0 +1,13 @@
+{
+    "log-driver": "journald",
+    "log-opts": {
+            "tag": "{{.Name}}"
+    },
+    "bip": "17.17.101.1/24",
+    "default-address-pools":[
+            {
+                    "base":"17.17.103.0/16",
+                    "size":24
+            }
+    ]
+}
