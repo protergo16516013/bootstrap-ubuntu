@@ -18,7 +18,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 
 ### dependency
-apt install -y \
+sudo apt install -y \
     git curl \
     wget vim jq \
     unzip
